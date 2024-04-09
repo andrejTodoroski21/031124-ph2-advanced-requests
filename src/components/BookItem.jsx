@@ -13,6 +13,8 @@ function BookItem({ book }) {
 
             <button>Read by {book.reads} people</button>
 
+            <button>Remove Book</button>
+
         </div>
     )
 
