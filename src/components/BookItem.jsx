@@ -11,6 +11,8 @@ function BookItem({ book }) {
 
             <button>{book.likes} Likes</button>
 
+            <button>Read by {book.reads} people</button>
+
         </div>
     )
 
