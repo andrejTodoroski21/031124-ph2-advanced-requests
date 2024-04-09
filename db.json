@@ -1,0 +1,34 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "One Flew Over The Cuckoos Nest",
+            "author": "Ken Kasey",
+            "likes": 183
+        },
+        {
+            "id": 2,
+            "title": "To Kill A Mockingbird",
+            "author": "Harper Lee",
+            "likes": 203
+        },
+        {
+            "id": 3,
+            "title": "The Midwich Cuckoos",
+            "author": "John Wyndham",
+            "likes": 666
+        },
+        {
+            "id": 4,
+            "title": "Catwings",
+            "author": "Ursula K. Le Guin",
+            "likes": 159
+        },
+        {
+            "id": 5,
+            "title": "The Raven",
+            "author": "Edgar Allen Poe",
+            "likes": 710
+        }
+    ]
+}
