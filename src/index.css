@@ -1,3 +1,52 @@
+h1 {
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
 body {
   text-align: center;
+  margin: 1em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: lightgray;
+  width: 40%;
+  height: 12em;
+  margin: 1em;
+  border-radius: 7px; 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+form {
+  border: solid black 2px;
+  padding: 1em;
+  height: 20em;
+  position: sticky;
+  top: 4em;
+  border-radius: 8px;
+}
+
+form > input {
+  margin: 1em;
+  display: block;
+}
+
+button {
+  border: none;
+  margin: 0.3em;
+  background: darkgray;
+  padding: 0.3em;
+  border-radius: 7px;
 }

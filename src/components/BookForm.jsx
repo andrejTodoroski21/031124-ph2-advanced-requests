@@ -18,6 +18,8 @@ function BookForm() {
     return (
         <form onSubmit={handleSubmit}>
 
+            <h2>Add New Book</h2>
+
             {/* Title Input */}
             <input type="text" 
             name="title"
