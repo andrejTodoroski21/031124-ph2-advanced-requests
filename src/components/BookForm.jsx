@@ -1,16 +1,36 @@
 import { useState } from 'react'
 
-function BookForm() {
+function BookForm({booksData, setBooksData}) {
 
 
     // INPUT STATE
     const [title, setTitle] = useState("")
     const [author, setAuthor] = useState("")
 
+    
+
 
     // HANDLE SUBMIT
     function handleSubmit(event) {
         event.preventDefault()
+
+        fetch('http://localhost:3003/books', {
+            method:'POST',
+            headers:{
+                'Content-type' : 'application/json',
+                'Accept' : 'application/json'
+            },
+            body: JSON.stringify({
+               title ,
+               author,
+               likes:0, 
+               reads: 0
+            })
+        })
+        .then(response => response.json())
+        .then(newBookObj => {
+            setBooksData([...booksData, newBookObj])
+        })
     }
 
 

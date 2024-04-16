@@ -25,9 +25,9 @@ function App() {
 
       <main>
 
-        <BooksContainer booksData={booksData} />
+        <BooksContainer booksData={booksData} setBooksData={setBooksData} />
 
-        <BookForm />
+        <BookForm booksData={booksData} setBooksData={setBooksData} />
       
       </main>
 

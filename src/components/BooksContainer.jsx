@@ -1,9 +1,9 @@
 import BookItem from "./BookItem"
 
-function BooksContainer({ booksData }) {
+function BooksContainer({ booksData, setBooksData }) {
 
     // MAPPED BOOKS
-    const mappedBooks = booksData.map( book => <BookItem key={book.id} book={book} /> )
+    const mappedBooks = booksData.map( book => <BookItem key={book.id} booksData={booksData} book={book} setBooksData={setBooksData} /> )
 
 
     // RENDER
